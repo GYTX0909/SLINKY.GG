@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLINKY.GG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #000, #444, #888, #000);
+            background-size: 400% 400%;
+            animation: gradientAnimation 8s infinite;
+            z-index: -1;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Top Corner Text */
+        .top-left {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 36px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, #ff8800, #ffaa33);
+            color: transparent;
+            background-clip: text;
+        }
+
+        /* Main Content Centered */
+        .main-content {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #f5f5f5;
+        }
+
+        .main-title {
+            font-size: 64px;
+            font-weight: 600;
+            text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .sub-title {
+            font-size: 22px;
+            margin-top: 10px;
+            opacity: 0.9;
+            color: #cccccc;
+        }
+
+        /* Download Button */
+        .download-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: linear-gradient(90deg, #ff8800, #ffaa33);
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0px 4px 15px rgba(255, 97, 38, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .download-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 20px rgba(255, 136, 0, 0.8);
+        }
+
+        /* Bottom Section */
+        .bottom-section {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .separator {
+            width: 80%;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+        }
+
+        .configs-title {
+            margin-top: 10px;
+            font-size: 28px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        /* Rounded Box Section */
+        .rounded-box {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            cursor: pointer;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .rounded-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .icon-square {
+            width: 70px;
+            height: 70px;
+            background-color: #ffaa33;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .box-content {
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-left">SLINKY.GG</div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="main-title">SLINKY CLIENT</div>
+        <div class="sub-title">THE BEST HACKED CLIENT FOR MINECRAFT</div>
+        <a href="https://crystalpvp.ru/slinky/slinkycrack.zip" class="download-button">GET SLINKY CLIENT</a>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+        <div class="separator"></div>
+
+        <div class="configs-title">Configs</div>
+
+        <div class="rounded-box" onclick="window.open('https://download1321.mediafire.com/7rrqo5gxdxbgSArUkIXj36nUNagL8w7QuA-zN5rK_lwm7xdGn90ZOZV8dUGrXjrthBPX0bMuFEGPYIymuigCt-s03pySg5UpQL8Po2k7wAruPkZTKgbVPvrpUYfS1lz0piGsBQb88Jy67uHviudC922HdahX22aJxgrSQD2cvUc/ccxm55dyla9ebyw/BlocksMC+Config', '_blank')">
+            <div class="icon-square">C</div>
+            <div class="box-content">
+                A ghost config that almost works for every anti-cheat. It bypasses BlocksMC super good and can never get anti-cheat banned.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
